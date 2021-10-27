@@ -11,8 +11,9 @@ body {
   position: relative;
   width: 100%;
   background: none;
-  height: auto;
+  height: fit-content;
   overflow: auto;
+  background: brown;
 }
 
 .Horrizontal_Line {
