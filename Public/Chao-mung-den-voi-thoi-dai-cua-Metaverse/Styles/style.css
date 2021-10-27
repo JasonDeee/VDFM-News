@@ -12,7 +12,7 @@ body {
   width: 100%;
   background: none;
   height: fit-content;
-  overflow: auto;
+  overflow: scroll;
 }
 
 .Horrizontal_Line {
