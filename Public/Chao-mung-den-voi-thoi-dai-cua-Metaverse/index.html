@@ -10,6 +10,16 @@
         },
         false
       );
+      if (window && window.parent) {
+        window.parent.postMessage(
+          {
+            message: "The message is being set up here",
+            hide: "dbhchat",
+            show: "dbhchat",
+          },
+          "*"
+        );
+      }
     </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
