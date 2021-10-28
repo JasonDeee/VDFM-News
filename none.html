@@ -34,9 +34,9 @@
     <div class="auto">
       <script>
         function resizeIframe(obj) {
-          console.log(obj.contentWindow.document);
-          //   obj.style.height =
-          //     obj.contentWindow.document.documentElement.scrollHeight + "px";
+          console.log(obj.contentWindow.document.documentElement.scrollHeight);
+          obj.style.height =
+            obj.contentWindow.document.documentElement.scrollHeight + "px";
         }
       </script>
 
