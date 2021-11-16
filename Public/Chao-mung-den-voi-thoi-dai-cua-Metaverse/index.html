@@ -2,45 +2,52 @@
 
 <html lang="en">
   <head>
-    <script type="text/javascript">
-      window.addEventListener(
-        "message",
-        function (event) {
-          console.log(event);
-        },
-        false
-      );
-      if (window && window.parent) {
-        window.parent.postMessage(
-          {
-            message: "The message is being set up here",
-            hide: "dbhchat",
-            show: "dbhchat",
-          },
-          "*"
-        );
-      }
-    </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chào mừng đến với thời đại của Metaverse</title>
 
     <link rel="stylesheet" href="./Styles/style.css" />
-    <style>
-      ::-webkit-scrollbar {
-        width: 0;
-      }
-    </style>
   </head>
   <body>
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v12.0&appId=428340158862034&autoLogAppEvents=1"
+      nonce="RFlb5m8o"
+    ></script>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v12.0&appId=428340158862034&autoLogAppEvents=1"
+      nonce="8Vtrr88R"
+    ></script>
     <h3 class="Chapeau">
       Metaverse là một phiên bản cấp tiến của Internet, một vũ trụ ảo nơi con
       người thật sự “tồn tại” trong đó. Đây chính là một ý tưởng đột phá, một
       môi trường ảo có rất nhiều tiềm năng phát triển
     </h3>
+    <div class="Share_Option">
+      <div
+        class="fb-like"
+        data-href="https://alpha.vdfm.ga/#/Tin-moi/Chao-mung-den-voi-thoi-dai-cua-Metaverse"
+        data-width=""
+        data-layout="button_count"
+        data-action="like"
+        data-size="small"
+        data-share="true"
+      ></div>
+      <div
+        class="fb-save"
+        data-uri="https://alpha.vdfm.ga/#/Tin-moi/Chao-mung-den-voi-thoi-dai-cua-Metaverse"
+        data-size="small"
+      ></div>
+    </div>
     <div class="Horrizontal_Line"></div>
-    <p>
+    <p class="Dropcap">
       Sự kết hợp giữa “meta” (vượt ra ngoài) và “universe” (vũ trụ), hình thành
       nên khái niệm “metaverse” (vũ trụ kỹ thuật số). Chúng tồn tại song song
       với thế giới thực được kiến tạo từ những thành tựu công nghệ hiện đại.
@@ -53,6 +60,17 @@
       chỉ một chớp mắt, bạn đã thấy mình xuất hiện ở nơi đây. Hơn thế nữa, bạn
       còn có thể cảm nhận được cái se lạnh của buổi sớm Đà Lạt.
     </p>
+    <div class="ImageHolder">
+      <img
+        src="https://i.imgur.com/jT2tmg3.jpeg"
+        alt="Metaverse sẽ thu hẹp về khoảng cách địa lý và chiều không gian giữa con người còn mạnh mẽ hơn cả mạng Internet ngày nay.
+"
+      />
+      <h5 class="PlaceHolder">
+        Metaverse sẽ thu hẹp về khoảng cách địa lý và chiều không gian giữa con
+        người còn mạnh mẽ hơn cả mạng Internet ngày nay.
+      </h5>
+    </div>
     <p>
       Viễn cảnh trên giống như một cuốn phim giả tưởng. Thế nhưng, viễn cảnh này
       đang đến gần với chúng ta hơn bao giờ hết. Nếu như kỷ nguyên Internet đã
@@ -69,4 +87,32 @@
       thuật số của thế giới thời trang
     </p>
   </body>
+  <script type="text/javascript">
+    window.addEventListener("resize", () => {
+      window.parent.postMessage(
+        {
+          code: "NewsTemplate",
+          innerHeight: document.body.offsetHeight,
+        },
+        "*"
+      );
+    });
+    console.log(document.body.clientHeight);
+    window.addEventListener(
+      "message",
+      function (event) {
+        console.log(event);
+      },
+      false
+    );
+    if (window && window.parent) {
+      window.parent.postMessage(
+        {
+          code: "NewsTemplate",
+          innerHeight: document.body.offsetHeight,
+        },
+        "*"
+      );
+    }
+  </script>
 </html>

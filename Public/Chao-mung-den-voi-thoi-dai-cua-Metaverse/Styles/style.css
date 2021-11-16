@@ -17,6 +17,19 @@ body {
   overflow: scroll;
 }
 
+.Share_Option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+  margin-top: 10px;
+  width: 100%;
+}
+
 .Horrizontal_Line {
   height: 1px;
   width: 62%;
@@ -28,14 +41,59 @@ body {
 h3 {
   color: #292929;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 p {
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
   color: #151515;
   text-align: justify;
   margin-bottom: 10px;
+}
+
+.ImageHolder {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #00000015;
+  margin-bottom: 10px;
+}
+
+.ImageHolder img {
+  width: 100%;
+  height: auto;
+}
+
+.ImageHolder .PlaceHolder {
+  font-weight: 400;
+  font-style: italic;
+  padding: 10px;
+  text-align: center;
+  color: #656565;
+}
+
+@media screen and (max-width: 300px) {
+  .Share_Option {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=style.css.map */

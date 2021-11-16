@@ -14,7 +14,13 @@ body {
   height: fit-content;
   overflow: scroll;
 }
-
+.Share_Option {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 10px;
+  width: 100%;
+}
 .Horrizontal_Line {
   height: 1px;
   width: 62%;
@@ -26,15 +32,49 @@ body {
 h3 {
   color: #292929;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
 }
-
+// .Dropcap::first-letter {
+//   font-size: 2.4rem;
+//   float: left;
+//   line-height: 2.4rem;
+//   margin: 0.1rem 0.1rem 0.2rem 0;
+//   font-weight: 700;
+// }
 p {
   font-size: 1rem;
 
-  font-weight: 300;
+  font-weight: 400;
   color: #151515;
 
   text-align: justify;
   margin-bottom: 10px;
+}
+.ImageHolder {
+  width: 100%;
+  height: fit-content;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #00000015;
+  margin-bottom: 10px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .PlaceHolder {
+    font-weight: 400;
+    font-style: italic;
+    padding: 10px;
+    text-align: center;
+    color: #656565;
+  }
+}
+@media screen and (max-width: 300px) {
+  .Share_Option {
+    flex-direction: column;
+  }
 }
