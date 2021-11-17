@@ -1,3 +1,13 @@
 <script>
+  //
+  if (window && window.parent) {
+    window.parent.postMessage(
+      {
+        code: "404news",
+      },
+      "*"
+    );
+  }
+  //
   window.location.href = "https://alpha.vdfm.ga/#/404";
 </script>
