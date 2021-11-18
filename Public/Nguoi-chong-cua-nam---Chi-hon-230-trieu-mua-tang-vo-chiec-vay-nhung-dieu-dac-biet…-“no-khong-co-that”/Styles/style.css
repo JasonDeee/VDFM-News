@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  background: none;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  overflow: scroll;
+}
+
+.Share_Option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.Horrizontal_Line {
+  height: 1px;
+  width: 62%;
+  background: #292929;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.VideoEmbedHolder {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: #00000015;
+}
+
+.VideoEmbedHolder iframe,
+.VideoEmbedHolder video {
+  width: 100%;
+  min-height: 480px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+h3 {
+  color: #292929;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #151515;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+.ImageHolder {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #00000015;
+  margin-bottom: 10px;
+}
+
+.ImageHolder img {
+  width: 100%;
+  height: auto;
+}
+
+.PlaceHolder {
+  font-weight: 400;
+  font-style: italic;
+  padding: 10px;
+  text-align: center;
+  color: #656565;
+}
+
+@media screen and (max-width: 300px) {
+  .Share_Option {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=style.css.map */
